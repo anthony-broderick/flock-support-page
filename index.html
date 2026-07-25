@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flock — Support</title>
+  <meta name="description" content="Support page for Flock — the simple, private job application tracker." />
+  <link rel="icon" href="icon-512.png" type="image/png" />
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Google Fonts: Fredoka (main) + Nunito (accessorizing) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- =============================================
+       NAVIGATION
+       ============================================= -->
+  <header class="site-header" role="banner">
+    <nav class="nav container" aria-label="Main navigation">
+      <a href="#hero" class="nav-logo">
+        <img src="icon-512.png" alt="" class="nav-logo-icon" />
+        Flock
+      </a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links" role="list">
+        <li><a href="#support">Support</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#privacy">Privacy</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- =============================================
+         HERO SECTION
+         ============================================= -->
+    <section class="hero" id="hero" aria-labelledby="hero-heading">
+      <div class="container hero-inner">
+        <div class="hero-icon-wrap">
+          <img src="icon-512.png" alt="Flock app icon" class="hero-icon" />
+        </div>
+        <div class="hero-badge">Job Application Tracker</div>
+        <h1 id="hero-heading">Flock</h1>
+        <p class="hero-description">
+          Keep your job search organized without the clutter. No accounts, no cloud syncing, no noise — just your applications, all in one place.
+        </p>
+        <div class="hero-cta">
+          <a href="#support" class="btn btn-primary">Get Help</a>
+          <a href="#faq" class="btn btn-secondary">Browse FAQ</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- =============================================
+         SUPPORT SECTION
+         ============================================= -->
+    <section class="section" id="support" aria-labelledby="support-heading">
+      <div class="container">
+        <div class="section-header">
+          <h2 id="support-heading">Support</h2>
+          <p class="section-subtext">
+            Choose an option below to help improve the app.
+          </p>
+        </div>
+
+        <div class="cards-grid">
+
+          <!-- Bug Report Card -->
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSdAEcO6RI6iofoGQ96zG-QFtQakPHM-z83hekLIT1-u0xvNJg/viewform?usp=publish-editor"
+             target="_blank"
+             rel="noopener noreferrer"
+             class="support-card"
+             aria-label="Report a bug — opens Google Form">
+            <div class="card-icon" aria-hidden="true">🐞</div>
+            <h3>Report a Bug</h3>
+            <p>Found something that isn't working correctly? Submit a report so it can be fixed.</p>
+            <span class="card-link">Open Form →</span>
+          </a>
+
+          <!-- Feedback Card -->
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSehYfV31dz8tA-rcGnHQ3P1QQCUns2un3A8A8wgXOEQ3agDAQ/viewform?usp=publish-editor"
+             target="_blank"
+             rel="noopener noreferrer"
+             class="support-card"
+             aria-label="Share feedback — opens Google Form">
+            <div class="card-icon icon-orange" aria-hidden="true">💡</div>
+            <h3>Share Feedback</h3>
+            <p>Have a suggestion or feature request? Feedback helps shape what gets built next.</p>
+            <span class="card-link">Open Form →</span>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =============================================
+         FAQ SECTION
+         ============================================= -->
+    <section class="section section-alt" id="faq" aria-labelledby="faq-heading">
+      <div class="container">
+        <div class="section-header">
+          <h2 id="faq-heading">Frequently Asked Questions</h2>
+          <p class="section-subtext">Quick answers to the most common questions.</p>
+        </div>
+
+        <div class="faq-list" role="list">
+
+          <div class="faq-item" role="listitem">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-1">
+              How do I access the settings?
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-answer" id="faq-1" hidden>
+              <p>
+                Tap the goose icon in the top left corner of the screen to open the settings menu.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item" role="listitem">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-2">
+              How do I edit or delete an application?
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-answer" id="faq-2" hidden>
+              <p>
+                Open the application you want to change, then tap the pencil icon in the top right corner to edit it. To remove an application entirely, use the delete button at the bottom of the screen.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item" role="listitem">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-3">
+              How do I export or import my data?
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-answer" id="faq-3" hidden>
+              <p>
+                In the settings section, you can export your data as a CSV file. To import data, use a CSV file that follows the same template recommended by the app.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item" role="listitem">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-4">
+              Is my job application information secure?
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-answer" id="faq-4" hidden>
+              <p>
+                Yes. All of your data stays on your device, and there are no account sign ups required to use Flock.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item" role="listitem">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-5">
+              How do I submit a bug or request a feature?
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-answer" id="faq-5" hidden>
+              <p>
+                Use the forms in the <a href="#support">Support section</a> above. There's a dedicated form for bug reports and another for feature feedback. You can also reach out directly using the email in the <a href="#contact">Contact section</a>.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item" role="listitem">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-6">
+              Can I use Flock on multiple devices?
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-answer" id="faq-6" hidden>
+              <p>
+                Because Flock stores data locally, information doesn't sync automatically between devices. Data can be transferred manually using the Export and Import feature described above.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =============================================
+         CONTACT SECTION
+         ============================================= -->
+    <section class="section" id="contact" aria-labelledby="contact-heading">
+      <div class="container">
+        <div class="section-header">
+          <h2 id="contact-heading">Contact</h2>
+          <p class="section-subtext">Prefer to reach out directly? Send an email anytime.</p>
+        </div>
+
+        <div class="contact-card">
+          <div class="contact-icon" aria-hidden="true">✉️</div>
+          <div class="contact-body">
+            <p class="contact-label">Support Email</p>
+            <a href="mailto:flockapplicationtrackerapp@gmail.com" class="contact-email">
+              flockapplicationtrackerapp@gmail.com
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =============================================
+         PRIVACY SECTION
+         ============================================= -->
+    <section class="section section-alt" id="privacy" aria-labelledby="privacy-heading">
+      <div class="container">
+        <div class="section-header">
+          <h2 id="privacy-heading">Privacy</h2>
+          <p class="section-subtext">
+            Your job search data never leaves your device. Flock collects no personal information, requires no account, and never shares or sells data.
+          </p>
+        </div>
+
+        <div class="privacy-card">
+          <span class="privacy-emoji" aria-hidden="true">🔒</span>
+          <a href="privacy.html" class="btn btn-secondary" aria-label="Read the full Privacy Policy">
+            Read the Privacy Policy
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =============================================
+       FOOTER
+       ============================================= -->
+  <footer class="footer" role="contentinfo">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="footer-logo">Flock</span>
+        <span class="footer-copy">Flock 2026</span>
+      </div>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="#support">Support</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
+        <a href="#privacy">Privacy</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
