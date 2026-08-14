@@ -102,90 +102,107 @@
     <!-- =============================================
          FAQ SECTION
          ============================================= -->
-    <section class="section section-alt" id="faq" aria-labelledby="faq-heading">
-      <div class="container">
-        <div class="section-header">
-          <h2 id="faq-heading">Frequently Asked Questions</h2>
-          <p class="section-subtext">Quick answers to the most common questions.</p>
-        </div>
+<section class="section section-alt" id="faq" aria-labelledby="faq-heading">
+  <div class="container">
+    <div class="section-header">
+      <h2 id="faq-heading">Frequently Asked Questions</h2>
+      <p class="section-subtext">Quick answers to the most common questions.</p>
+    </div>
 
-        <div class="faq-list" role="list">
+    <div class="faq-list" role="list">
 
-          <div class="faq-item" role="listitem">
-            <button class="faq-question" aria-expanded="false" aria-controls="faq-1">
-              How do I access the settings?
-              <span class="faq-icon" aria-hidden="true"></span>
-            </button>
-            <div class="faq-answer" id="faq-1" hidden>
-              <p>
-                Tap the goose icon in the top right corner of the screen to open the settings menu.
-              </p>
-            </div>
-          </div>
-
-          <div class="faq-item" role="listitem">
-            <button class="faq-question" aria-expanded="false" aria-controls="faq-2">
-              How do I edit or delete an application?
-              <span class="faq-icon" aria-hidden="true"></span>
-            </button>
-            <div class="faq-answer" id="faq-2" hidden>
-              <p>
-                Open the application you want to change, then tap the pencil icon in the top right corner to edit it. To remove an application entirely, use the delete button at the bottom of the screen.
-              </p>
-            </div>
-          </div>
-
-          <div class="faq-item" role="listitem">
-            <button class="faq-question" aria-expanded="false" aria-controls="faq-3">
-              How do I export or import my data?
-              <span class="faq-icon" aria-hidden="true"></span>
-            </button>
-            <div class="faq-answer" id="faq-3" hidden>
-              <p>
-                In the settings section, you can export your data as a CSV file. To import data, use a CSV file that follows the same template recommended by the app.
-              </p>
-            </div>
-          </div>
-
-          <div class="faq-item" role="listitem">
-            <button class="faq-question" aria-expanded="false" aria-controls="faq-4">
-              Is my job application information secure?
-              <span class="faq-icon" aria-hidden="true"></span>
-            </button>
-            <div class="faq-answer" id="faq-4" hidden>
-              <p>
-                Yes. All of your data stays on your device, and there are no account sign ups required to use Flock.
-              </p>
-            </div>
-          </div>
-
-          <div class="faq-item" role="listitem">
-            <button class="faq-question" aria-expanded="false" aria-controls="faq-5">
-              How do I submit a bug or request a feature?
-              <span class="faq-icon" aria-hidden="true"></span>
-            </button>
-            <div class="faq-answer" id="faq-5" hidden>
-              <p>
-                Use the forms in the <a href="#support">Support section</a> above. There's a dedicated form for bug reports and another for feature feedback. You can also reach out directly using the email in the <a href="#contact">Contact section</a>.
-              </p>
-            </div>
-          </div>
-
-          <div class="faq-item" role="listitem">
-            <button class="faq-question" aria-expanded="false" aria-controls="faq-6">
-              Can I use Flock on multiple devices?
-              <span class="faq-icon" aria-hidden="true"></span>
-            </button>
-            <div class="faq-answer" id="faq-6" hidden>
-              <p>
-                Because Flock stores data locally, information doesn't sync automatically between devices. Data can be transferred manually using the Export and Import feature described above.
-              </p>
-            </div>
-          </div>
-
+      <div class="faq-item" role="listitem">
+        <button class="faq-question" aria-expanded="false" aria-controls="faq-1">
+          Why isn't my import or export working?
+          <span class="faq-icon" aria-hidden="true"></span>
+        </button>
+        <div class="faq-answer" id="faq-1" hidden>
+          <p>
+            Flock uses CSV files for importing and exporting application data. Make sure you are using a <strong>.csv</strong> file and that the header row exactly matches the provided template. The header row must also be the first row of the file, with no additional rows or information above it.
+          </p>
         </div>
       </div>
-    </section>
+
+      <div class="faq-item" role="listitem">
+        <button class="faq-question" aria-expanded="false" aria-controls="faq-2">
+          Do I need an account to use Flock?
+          <span class="faq-icon" aria-hidden="true"></span>
+        </button>
+        <div class="faq-answer" id="faq-2" hidden>
+          <p>
+            No. You can use Flock's core application features without an account. An account is only required for AI-powered features, such as the Auto Resume Builder.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item" role="listitem">
+        <button class="faq-question" aria-expanded="false" aria-controls="faq-3">
+          How do I generate a resume?
+          <span class="faq-icon" aria-hidden="true"></span>
+        </button>
+        <div class="faq-answer" id="faq-3" hidden>
+          <p>
+            Go to <strong>Settings &gt; Log in to an account &gt; Build Profile</strong>. After completing your profile, create or edit an application and enter the company name, role, and job description in the notes section. Then select <strong>Generate Resume</strong>.
+          </p>
+          <p>
+            Flock uses a consistent resume template and builds your header and education section from the information in your profile. It then analyzes the job description and selects the skills, projects, and work experience that best match the position, generating relevant bullet points for each. You'll receive a preview of the resume that you can edit before downloading it.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item" role="listitem">
+        <button class="faq-question" aria-expanded="false" aria-controls="faq-4">
+          How do I edit my generated resume?
+          <span class="faq-icon" aria-hidden="true"></span>
+        </button>
+        <div class="faq-answer" id="faq-4" hidden>
+          <p>
+            After generating your resume, you'll be able to preview the PDF and make edits. Click on any bullet point field to change its text. To remove a bullet point, delete all of the text in that field. You can also remove an entire project or work experience entry by clicking the <strong>X</strong> next to its name. Once you are done, click the <strong>Finalize and Download</strong> button.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item" role="listitem">
+        <button class="faq-question" aria-expanded="false" aria-controls="faq-5">
+          What information is saved to my account?
+          <span class="faq-icon" aria-hidden="true"></span>
+        </button>
+        <div class="faq-answer" id="faq-5" hidden>
+          <p>
+            Your account stores your email address and the profile information you provide in the <strong>Build Profile</strong> section. Your password and job application information are not stored in the account database.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item" role="listitem">
+        <button class="faq-question" aria-expanded="false" aria-controls="faq-6">
+          Why isn't my streak number correct?
+          <span class="faq-icon" aria-hidden="true"></span>
+        </button>
+        <div class="faq-answer" id="faq-6" hidden>
+          <p>
+            If your streak number appears incorrect, go to <strong>Settings</strong> and select <strong>Recalculate Streak</strong>. This will recalculate your streak based on your application activity.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item" role="listitem">
+        <button class="faq-question" aria-expanded="false" aria-controls="faq-7">
+          Can I use Flock on multiple devices?
+          <span class="faq-icon" aria-hidden="true"></span>
+        </button>
+        <div class="faq-answer" id="faq-7" hidden>
+          <p>
+            Yes. Flock stores your application data locally, so applications do not automatically sync between devices. You can transfer your applications manually using the <strong>Export</strong> and <strong>Import</strong> features. If you have an account, your profile and subscription will carry over when you sign in on another device.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
 
     <!-- =============================================
          CONTACT SECTION
