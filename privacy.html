@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Privacy Policy — Flock</title>
-  <meta name="description" content="Privacy Policy for Flock — your job application data never leaves your device." />
+  <meta name="description" content="Privacy Policy for Flock — what data is collected, how AI resume features work, and which third-party services are involved." />
   <link rel="icon" href="icon-512.png" type="image/png" />
   <link rel="stylesheet" href="styles.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -125,6 +125,18 @@
       border-top: 1px solid var(--color-border);
       margin: var(--space-lg) 0;
     }
+
+    .policy-subsection {
+      margin-top: var(--space-md);
+    }
+
+    .policy-subsection h3 {
+      font-family: var(--font-heading);
+      font-size: 1.02rem;
+      font-weight: 600;
+      color: var(--color-text);
+      margin-bottom: 4px;
+    }
   </style>
 </head>
 <body>
@@ -156,14 +168,14 @@
         <div class="privacy-header">
           <h1>Privacy Policy</h1>
           <!-- ✏️ Update this date whenever you revise the policy -->
-          <p class="privacy-meta">Effective date: July 24, 2026 &nbsp;·&nbsp; Last updated: July 24, 2026</p>
+          <p class="privacy-meta">Effective date: August 17, 2026 &nbsp;·&nbsp; Last updated: August 17, 2026</p>
         </div>
 
         <!-- Plain-language summary at the top -->
         <div class="privacy-summary" role="note" aria-label="Privacy summary">
           <p>
-            The short version: Flock stores all your data locally on your device.
-            Nothing is collected, transmitted, or shared. There are no accounts, no analytics, no ads, and no third-party access to your information, ever.
+            The short version: your tracked job applications stay entirely on your device and are never uploaded anywhere.
+            Creating an optional account unlocks AI resume features — if you do, your resume profile and account details are stored securely with our backend provider, and job descriptions you generate resumes from are sent to our AI provider to produce suggestions. No data is sold or shared with advertisers, and you can permanently delete your account and all associated data at any time from within the app.
           </p>
         </div>
 
@@ -171,9 +183,7 @@
         <div class="policy-section">
           <h2>1. Overview</h2>
           <p>
-            Flock ("the app") is a job application tracker built with a privacy-first approach.
-            This policy explains what data the app handles, how it is stored, and your rights as a user.
-            Because the app does not collect or transmit personal data, this policy is intentionally simple.
+            Flock ("the app") is a job application tracker with an optional AI-powered resume assistant. This policy explains what data the app handles, how it's stored, which third parties are involved, and your rights as a user. Flock is built and maintained by a single independent developer, not a company with a dedicated legal team — this policy describes the app's actual behavior in plain language.
           </p>
         </div>
 
@@ -181,16 +191,16 @@
 
         <!-- 2 -->
         <div class="policy-section">
-          <h2>2. Data We Do Not Collect</h2>
-          <p>Flock does not collect, store, or transmit any of the following:</p>
+          <h2>2. Job Application Data Stays on Your Device</h2>
+          <p>
+            Every application you track in Flock — company, role, status, notes, contacts, and dates — is stored exclusively on your device. This data:
+          </p>
           <ul>
-            <li>Personal identifiers (name, email address, phone number)</li>
-            <li>Resumes, cover letters, or other documents beyond what you choose to type into the app</li>
-            <li>Location data</li>
-            <li>Device identifiers or advertising IDs</li>
-            <li>Usage analytics or behavioural data</li>
-            <li>Crash logs or diagnostics sent to any external server</li>
-            <li>Any data through third-party SDKs, analytics tools, or ad networks</li>
+            <li>Never leaves your device automatically, and is never uploaded to our servers</li>
+            <li>Is not accessible to the app developer</li>
+            <li>Is not tied to any account, even if you're logged in</li>
+            <li>Leaves your device only through features you explicitly use yourself, such as CSV export</li>
+            <li>May be included in your device's own backup features, which are governed by that provider's (e.g. Apple's) privacy policy, not this one</li>
           </ul>
         </div>
 
@@ -198,25 +208,30 @@
 
         <!-- 3 -->
         <div class="policy-section">
-          <h2>3. Data Stored on Your Device</h2>
+          <h2>3. Account Information (Optional)</h2>
           <p>
-            All data you enter into Flock, including companies, roles, application stages, and notes, is stored exclusively on your device using your browser's local storage. This data:
+            Creating an account is optional and is only required to use the AI resume features. If you create one, we collect your email address and password. Your password is never stored by us directly — it's handled entirely by our authentication provider, Supabase, which stores it in hashed, salted form.
           </p>
-          <ul>
-            <li>Never leaves your device automatically</li>
-            <li>Is not accessible to the app developer</li>
-            <li>Is not backed up to any external server operated by Flock</li>
-            <li>May be included in your device or browser's own backup features, which are governed by that provider's privacy policy</li>
-          </ul>
+          <div class="policy-subsection">
+            <h3>Resume profile</h3>
+            <p>If you build a resume profile in the app, we store what you enter — your name, contact details, education, certificates, project history, and work history — tied to your account, so it's available across sessions and devices when you're logged in.</p>
+          </div>
+          <div class="policy-subsection">
+            <h3>Subscription and usage</h3>
+            <p>If you subscribe to Flock Pro or Max, we store your subscription tier, status, and remaining AI credits, tied to your account. Actual payment details are never collected or seen by us — all payment processing happens entirely through Apple's App Store and StoreKit.</p>
+          </div>
         </div>
 
         <hr class="policy-divider" />
 
         <!-- 4 -->
         <div class="policy-section">
-          <h2>4. No Third-Party Sharing</h2>
+          <h2>4. How We Use Artificial Intelligence</h2>
           <p>
-            There are no third-party services, advertising networks, data brokers, or analytics providers integrated into Flock. No data is sold, rented, or shared with any third party under any circumstances.
+            When you generate a resume, the job description text you've entered and the relevant parts of your resume profile are sent to our AI provider, Anthropic, to produce tailored resume bullet points. This only happens when you explicitly request it, and it's the only AI processing Flock performs.
+          </p>
+          <p>
+            This content is used to generate your response and isn't permanently stored on our servers beyond what's needed to complete that request. We don't use your data to train any AI model.
           </p>
         </div>
 
@@ -224,19 +239,25 @@
 
         <!-- 5 -->
         <div class="policy-section">
-          <h2>5. No Account Required</h2>
-          <p>
-            Flock does not require you to create an account or provide any personal information to use the app. The app functions entirely without registration or sign-in.
-          </p>
+          <h2>5. Third-Party Services We Use</h2>
+          <p>Flock relies on the following third-party services. Each only receives the specific information described:</p>
+          <ul>
+            <li><strong>Supabase</strong> — account authentication and data storage. Receives your email, hashed password, resume profile, and subscription status.</li>
+            <li><strong>Anthropic</strong> — AI resume content generation. Receives job description text and resume profile content, only when you generate a resume.</li>
+            <li><strong>Apple (App Store / StoreKit)</strong> — subscription purchases and payment processing, handled entirely by Apple. We never receive your payment details.</li>
+            <li><strong>Cloudflare</strong> — hosts the server that connects the app to our AI provider. Passes requests through without independently storing your data.</li>
+            <li><strong>Resend</strong> — sends account-related emails (signup confirmation, password reset). Receives your email address only for this purpose.</li>
+          </ul>
+          <p>No data is sold, rented, or shared with advertisers, data brokers, or analytics networks.</p>
         </div>
 
         <hr class="policy-divider" />
 
         <!-- 6 -->
         <div class="policy-section">
-          <h2>6. Children's Privacy</h2>
+          <h2>6. Account Is Optional</h2>
           <p>
-            Flock does not knowingly collect any data from anyone, including children under the age of 13. Because no data is collected at all, the app complies with the Children's Online Privacy Protection Act (COPPA) and similar regulations by design.
+            Flock's core job-tracking features work fully without an account — no registration or sign-in required. An account is only needed if you want to use the AI resume features, which need somewhere secure to store your resume profile and manage your subscription.
           </p>
         </div>
 
@@ -244,9 +265,9 @@
 
         <!-- 7 -->
         <div class="policy-section">
-          <h2>7. Data Deletion</h2>
+          <h2>7. Children's Privacy</h2>
           <p>
-            Because all data is stored locally on your device, you have full control over it at all times. To delete your data, clear the app's data from your browser settings, or simply stop using the app. This permanently removes all app data stored locally. There is no data held on any external server to request deletion of.
+            Flock is not directed at children and is not intended for use by anyone under 13. We do not knowingly collect information from children under 13.
           </p>
         </div>
 
@@ -254,9 +275,12 @@
 
         <!-- 8 -->
         <div class="policy-section">
-          <h2>8. Changes to This Policy</h2>
+          <h2>8. Data Deletion</h2>
           <p>
-            This privacy policy may be updated from time to time. Any changes will be reflected on this page with a revised effective date. Continued use of the app after changes are posted constitutes acceptance of the updated policy. Given the app's privacy-first design, any future changes are expected to remain minimal.
+            Your locally-stored job application data is fully in your control at all times — clear it from Settings &gt; Reset all data within the app, or by deleting the app itself.
+          </p>
+          <p>
+            If you have an account, you can permanently delete it and all associated server-side data (resume profile, subscription record) at any time from Settings &gt; Manage Account &gt; Delete Account. If you have an active subscription, you'll need to cancel it first through iOS Settings, since deleting your account doesn't automatically cancel billing with Apple.
           </p>
         </div>
 
@@ -264,11 +288,23 @@
 
         <!-- 9 -->
         <div class="policy-section">
-          <h2>9. Contact</h2>
+          <h2>9. Changes to This Policy</h2>
+          <p>
+            This privacy policy may be updated from time to time as the app evolves. Any changes will be reflected on this page with a revised effective date. Continued use of the app after changes are posted constitutes acceptance of the updated policy.
+          </p>
+        </div>
+
+        <hr class="policy-divider" />
+
+        <!-- 10 -->
+        <div class="policy-section">
+          <h2>10. Contact</h2>
           <p>
             Questions or concerns about this privacy policy can be directed to:
             <br /><br />
-            <a href="mailto:flockapplicationtrackerapp@gmail.com">flockapplicationtrackerapp@gmail.com</a>
+            <!-- ✏️ Your two source files disagree on this address (support@flockapplicationtracker.app
+                 vs flockapplicationtrackerapp@gmail.com) — confirm which is correct and fix this link. -->
+            <a href="mailto:CONFIRM-CORRECT-EMAIL">CONFIRM-CORRECT-EMAIL</a>
           </p>
         </div>
 
