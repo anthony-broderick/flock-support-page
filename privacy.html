@@ -168,14 +168,13 @@
         <div class="privacy-header">
           <h1>Privacy Policy</h1>
           <!-- Update this date whenever you revise the policy -->
-          <p class="privacy-meta">Effective date: September 1, 2026 &nbsp;·&nbsp; Last updated: September 1, 2026</p>
+          <p class="privacy-meta">Effective date: September 3, 2026 &nbsp;·&nbsp; Last updated: September 3, 2026</p>
         </div>
 
         <!-- Plain-language summary at the top -->
         <div class="privacy-summary" role="note" aria-label="Privacy summary">
           <p>
-            The short version: your tracked job applications stay entirely on your device and are never uploaded anywhere.
-            Creating an optional account unlocks AI resume features, if you do, your resume profile and account details are stored securely with our backend provider, and job descriptions you generate resumes from are sent to our AI provider to produce suggestions. No data is sold or shared with advertisers, and you can permanently delete your account and all associated data at any time from within the app.
+            The short version: your tracked job applications are always stored on your device. If you create an optional account, whether with an email and password, Apple, or Google, your applications, resume profile, and account details are also stored securely with our backend provider so they stay in sync across your devices, and job descriptions you generate resumes from are sent to our AI provider to produce suggestions. No data is sold or shared with advertisers, and you can permanently delete your account and all associated data at any time from within the app.
           </p>
         </div>
 
@@ -191,17 +190,22 @@
 
         <!-- 2 -->
         <div class="policy-section">
-          <h2>2. Job Application Data Stays on Your Device</h2>
+          <h2>2. Job Application Data</h2>
           <p>
-            Every application you track in Flock, company, role, status, notes, contacts, and dates, is stored exclusively on your device. This data:
+            Every application you track in Flock, company, role, status, notes, contacts, and dates, is always stored on your device first.
+          </p>
+          <p>
+            If you are not signed into an account, that device is the only place this data lives. It:
           </p>
           <ul>
             <li>Never leaves your device automatically, and is never uploaded to our servers</li>
             <li>Is not accessible to the app developer</li>
-            <li>Is not tied to any account, even if you're logged in</li>
             <li>Leaves your device only through features you explicitly use yourself, such as CSV export</li>
             <li>May be included in your device's own backup features, which are governed by that provider's (e.g. Apple's) privacy policy, not this one</li>
           </ul>
+          <p>
+            If you create an account and sign in, your job application data is also stored with our backend provider, Supabase, tied to your account, so it stays available and up to date across every device where you're signed in. Signing out leaves the current copy on that device but stops it from syncing further changes until you sign back in. Deleting your account also permanently deletes this synced copy, see Section 8.
+          </p>
         </div>
 
         <hr class="policy-divider" />
@@ -210,8 +214,15 @@
         <div class="policy-section">
           <h2>3. Account Information (Optional)</h2>
           <p>
-            Creating an account is optional and is only required to use the AI resume features. If you create one, we collect your email address and password. Your password is never stored by us directly, it's handled entirely by our authentication provider, Supabase, which stores it in hashed, salted form.
+            Creating an account is optional and is only required to use the AI resume features or to sync your job applications across devices. You can create one with an email and password, or by signing in with your Apple or Google account.
           </p>
+          <p>
+            If you sign in with Apple or Google, we receive the name and email address associated with that account (or the private relay email Apple provides, if you choose to hide your real one). We never receive or see your Apple or Google password. If you create an account with an email and password instead, your password is never stored by us directly, it's handled entirely by Supabase, which stores it in hashed, salted form.
+          </p>
+          <div class="policy-subsection">
+            <h3>Synced job applications</h3>
+            <p>As described in Section 2, if you're signed into an account, the applications you track are also stored with Supabase, tied to your account, so they're available and stay current across every device where you're signed in.</p>
+          </div>
           <div class="policy-subsection">
             <h3>Resume profile</h3>
             <p>If you build a resume profile in the app, we store what you enter, your name, contact details, education, certificates, project history, and work history, tied to your account, so it's available across sessions and devices when you're logged in.</p>
@@ -242,9 +253,10 @@
           <h2>5. Third-Party Services We Use</h2>
           <p>Flock relies on the following third-party services. Each only receives the specific information described:</p>
           <ul>
-            <li><strong>Supabase</strong>, account authentication and data storage. Receives your email, hashed password, resume profile, and AI credit balance.</li>
+            <li><strong>Supabase</strong>, account authentication and data storage. Receives your email, hashed password (if you sign in with email and password), resume profile, AI credit balance, and your tracked job applications if you're signed into an account.</li>
             <li><strong>Anthropic</strong>, AI resume content generation. Receives job description text and resume profile content, only when you generate a resume.</li>
-            <li><strong>Apple (App Store / StoreKit)</strong>, one-time purchases and payment processing, handled entirely by Apple. We never receive your payment details.</li>
+            <li><strong>Apple (App Store / StoreKit / Sign in with Apple)</strong>, one-time purchases and payment processing, and optional account sign-in, all handled entirely by Apple. We never receive your payment details, and if you sign in with Apple, we only receive the name and email you choose to share.</li>
+            <li><strong>Google (Sign in with Google)</strong>, optional account sign-in, handled entirely by Google. We only receive the name and email associated with your Google account, never your Google password.</li>
             <li><strong>Cloudflare</strong>, hosts the server that connects the app to our AI provider. Passes requests through without independently storing your data.</li>
             <li><strong>Resend</strong>, sends account-related emails (signup confirmation, password reset). Receives your email address only for this purpose.</li>
           </ul>
@@ -257,7 +269,7 @@
         <div class="policy-section">
           <h2>6. Account Is Optional</h2>
           <p>
-            Flock's core job-tracking features work fully without an account, no registration or sign-in required. An account is only needed if you want to use the AI resume features, which need somewhere secure to store your resume profile and credit balance.
+            Flock's core job-tracking features work fully without an account, no registration or sign-in required, and your data stays on your device only. An account is needed if you want to use the AI resume features, or if you want your job applications kept in sync across more than one device.
           </p>
         </div>
 
@@ -277,10 +289,10 @@
         <div class="policy-section">
           <h2>8. Data Deletion</h2>
           <p>
-            Your locally-stored job application data is fully in your control at all times, clear it from Settings &gt; Reset all data within the app, or by deleting the app itself.
+            Your locally-stored job application data is fully in your control at all times, clear it from Settings &gt; Reset all data within the app, or by deleting the app itself. If you're signed into an account when you use Reset all data, the synced copy of your applications stored with Supabase is permanently deleted at the same time as your local copy.
           </p>
           <p>
-            If you have an account, you can permanently delete it and all associated server-side data (resume profile, AI credit balance) at any time from Settings &gt; Manage Account &gt; Delete Account. Since AI credits are a one-time purchase with no recurring charge to cancel, account deletion takes effect immediately with no additional steps required.
+            If you have an account, you can permanently delete it and all associated server-side data (resume profile, AI credit balance, and any synced job applications) at any time from Settings &gt; Manage Account &gt; Delete Account. Since AI credits are a one-time purchase with no recurring charge to cancel, account deletion takes effect immediately with no additional steps required.
           </p>
         </div>
 
